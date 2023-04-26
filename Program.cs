@@ -55,3 +55,13 @@
 
 // * HOMEWORK 1. TASK 4.
 
+
+Console.Write("Введите число: ");
+int n = int.Parse(Console.ReadLine());
+int s = 2;
+if(n > 1) {
+    while(s <= n) {
+       Console.Write(s + ", ");
+        s = s + 2;
+    }
+}
