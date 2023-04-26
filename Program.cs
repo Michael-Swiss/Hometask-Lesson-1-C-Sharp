@@ -20,20 +20,31 @@
 // Console.WriteLine("b - большее число и составляет: " + b + " а меньшее это: " + a); 
 // } 
 
-int max = 0;
-Console.Write("Введите первое число: ");
-int firstNumber = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите второе число: ");
-int secondNumber = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите третье число: ");
-int thirdNumber = Convert.ToInt32(Console.ReadLine());
-if(firstNumber > max) {
-    max = firstNumber;
+// int max = 0;
+// Console.WriteLine("Введите первое число: ");
+// int firstNumber = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите второе число: ");
+// int secondNumber = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите третье число: ");
+// int thirdNumber = int.Parse(Console.ReadLine());
+// if(firstNumber > max) {
+//     max = firstNumber;
+// }
+// if(secondNumber > max) {
+//     max = secondNumber;
+// }
+// if(thirdNumber > max) {
+//     max = thirdNumber;
+// }
+// Console.WriteLine("Максимальным из введенных чисел является: " + max);
+
+
+
+Console.WriteLine ("Введите число которое проверяем на четность: ");
+int a = int.Parse(Console.ReadLine());
+int x = a % 2;
+if(x == 0) {
+    Console.WriteLine("Да");
+} else {
+    Console.WriteLine("Нет");
 }
-if(secondNumber > max) {
-    max = secondNumber;
-}
-if(thirdNumber > max) {
-    max = thirdNumber;
-}
-Console.WriteLine("max = " + max);
